@@ -2,33 +2,33 @@
 class Person {
 	constructor(name, age)
 	{
-		name = this.name;
-		age = this.age;
+		this.name = name;
+		this.age = age;
 	}
- get getterName{
+ get getterName() {
 	 return this.name;
  }
 
- set setage(age){
+ set setage(age) {
 	 this.age = age;
  }
 }
 
 class Student extends Person {
-	Constructor{
-	super();
+	Constructor(name , age){
+	    super(name,age);
 	}
-	study(){
-       console.log(`${this.name} is studying`)
+	study() {
+       console.log(`${this.name} is studying`);
 	}
 }
 
 class Teacher extends Person {
-	Constructor{
-	super();
+	Constructor(name , age){
+	    super(name, age);
 	}
-	teach(){
-		console.log(`${this.name} is teching to the console`)
+	teach() {
+		console.log(`${this.name} is teching`)
 	}
 }
 
